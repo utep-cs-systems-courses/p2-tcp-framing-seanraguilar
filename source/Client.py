@@ -1,6 +1,5 @@
 '''
-FTPClient.py will act as the clint connecting to the FTPServer.py. 
-The Client will send a file that the server must copy, the name is then attaned from either one.
+FTPClient.py will act as the clint connecting to the FTPServer.py. The Client will send a file that the server must copy, the name is then attaned from either one.
 '''
 
 import socket, sys, re
@@ -13,7 +12,7 @@ switchesVarDefaults = (
     (('-d', '--debug'), "debug", False), # Boolean (set if present) # No functionality has been given to switchesVarDefaults besides server.
     (('-?', '--usage'), "usage", False), # Boolean (set if present)
     )
-progname = 'FTPClient'
+progname = 'Client'
 paramMap = params.parseParams(switchesVarDefaults)
 
 server, usage, debug  = paramMap["server"], paramMap["usage"], paramMap["debug"]
